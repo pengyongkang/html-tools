@@ -29,10 +29,8 @@
     }
   }
 
-  var initial = readTheme();
-  if (initial) {
-    root.setAttribute('data-theme', initial);
-  }
+var initial = readTheme() || 'light';
+root.setAttribute('data-theme', initial);
 
   function currentTheme() {
     return root.getAttribute('data-theme') === 'light' ? 'light' : 'dark';

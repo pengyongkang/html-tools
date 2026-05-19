@@ -12,7 +12,7 @@ let currentCategory = 'all';
 let toolCards = [];
 
 // ==================== 主题管理 ====================
-const savedTheme = localStorage.getItem('theme') || 'dark';
+const savedTheme = localStorage.getItem('theme') || 'light';
 if (savedTheme === 'light') {
   htmlElement.setAttribute('data-theme', 'light');
   themeIcon.textContent = '☀️';
